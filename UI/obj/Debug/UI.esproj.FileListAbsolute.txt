@@ -1,0 +1,2 @@
+C:\Users\GB\Desktop\Projetos\C#\UnicorEcommerce\UI\obj\Debug\UI.esproj.CoreCompileInputs.cache
+C:\Users\GB\Desktop\Projetos\Csharp\UnicorEcommerce\UI\obj\Debug\UI.esproj.CoreCompileInputs.cache
