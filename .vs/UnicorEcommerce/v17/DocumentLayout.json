@@ -3,6 +3,82 @@
   "WorkspaceRootPath": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-list-admin\\product-list-admin.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-list-admin\\product-list-admin.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-list\\product-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-list\\product-list.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-list\\product-list.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-list\\product-list.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-list\\product-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-list\\product-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\products.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\products.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-list-admin\\product-list-admin.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-list-admin\\product-list-admin.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\services\\product\\product.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\services\\product\\product.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\services\\product\\product.service.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\services\\product\\product.service.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-list-admin\\product-list-admin.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-list-admin\\product-list-admin.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-list\\product-list.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-list\\product-list.component.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\app.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\navbar\\navbar.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\navbar\\navbar.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\app.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
@@ -11,24 +87,8 @@
       "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-form\\product-form.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\services\\product\\product.service.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\services\\product\\product.service.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\services\\product\\product.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\services\\product\\product.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\app.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\app-routing.module.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-list\\product-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-list\\product-list.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-form\\product-form.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -37,10 +97,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\product-form\\product-form.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
       "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\product-form\\product-form.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\navbar\\navbar.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\app\\components\\navbar\\navbar.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\ui\\src\\app\\components\\navbar\\navbar.component.spec.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
@@ -55,32 +111,12 @@
       "RelativeMoniker": "D:0:0:{C62CF7B0-6508-E46D-FCE1-092C622FC55C}|UI\\UI.esproj|solutionrelative:ui\\src\\main.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\migrations\\20250306182946_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\migrations\\20250306182946_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\migrations\\applicationdbcontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|c:\\users\\gb\\desktop\\projetos\\csharp\\unicorecommerce\\products\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8CF8F88B-77AC-4161-84C5-E22955F7D426}|Products\\Products.csproj|solutionrelative:products\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -99,97 +135,110 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "app.component.ts",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.component.ts",
-              "RelativeDocumentMoniker": "UI\\src\\app\\app.component.ts",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.component.ts",
-              "RelativeToolTip": "UI\\src\\app\\app.component.ts",
+              "Title": "Products",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Products.csproj",
+              "RelativeDocumentMoniker": "Products\\Products.csproj",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Products.csproj",
+              "RelativeToolTip": "Products\\Products.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-07T19:10:57.743Z",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-10T18:13:33.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "app.module.ts",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.module.ts",
-              "RelativeDocumentMoniker": "UI\\src\\app\\app.module.ts",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.module.ts",
-              "RelativeToolTip": "UI\\src\\app\\app.module.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-07T19:05:27.368Z",
+              "Title": "product-list-admin.component.html",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.html",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.html",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.html",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-10T17:46:34.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "product-form.component.html",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.html",
-              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-form\\product-form.component.html",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.html",
-              "RelativeToolTip": "UI\\src\\app\\components\\product-form\\product-form.component.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-07T19:04:28.623Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "product-list.component.ts",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.ts",
-              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-list\\product-list.component.ts",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.ts",
-              "RelativeToolTip": "UI\\src\\app\\components\\product-list\\product-list.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-07T18:55:54.818Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "product-form.component.spec.ts",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.spec.ts",
-              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-form\\product-form.component.spec.ts",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.spec.ts",
-              "RelativeToolTip": "UI\\src\\app\\components\\product-form\\product-form.component.spec.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-07T18:54:07.271Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "product-form.component.ts",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.ts",
-              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-form\\product-form.component.ts",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.ts",
-              "RelativeToolTip": "UI\\src\\app\\components\\product-form\\product-form.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-07T18:52:28.032Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "product.service.ts",
               "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\services\\product\\product.service.ts",
               "RelativeDocumentMoniker": "UI\\src\\app\\services\\product\\product.service.ts",
               "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\services\\product\\product.service.ts",
               "RelativeToolTip": "UI\\src\\app\\services\\product\\product.service.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwB4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
               "WhenOpened": "2025-03-07T18:37:43.521Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "product-list.component.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-list\\product-list.component.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.ts",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-list\\product-list.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-07T18:55:54.818Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "product-list-admin.component.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.ts",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.ts",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACUAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-10T17:50:48.15Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "product-list.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.spec.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-list\\product-list.component.spec.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.spec.ts",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-list\\product-list.component.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-10T17:50:28.731Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "app-routing.module.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app-routing.module.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\app-routing.module.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app-routing.module.ts",
+              "RelativeToolTip": "UI\\src\\app\\app-routing.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-07T18:49:38.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "product-list.component.html",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.html",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-list\\product-list.component.html",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.html",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-list\\product-list.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-10T17:46:20.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "product.service.spec.ts",
               "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\services\\product\\product.service.spec.ts",
               "RelativeDocumentMoniker": "UI\\src\\app\\services\\product\\product.service.spec.ts",
@@ -203,135 +252,122 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "product-list-admin.component.css",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.css",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.css",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.css",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-list-admin\\product-list-admin.component.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T17:50:14.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "product-list.component.css",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.css",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-list\\product-list.component.css",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-list\\product-list.component.css",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-list\\product-list.component.css",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwDoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-10T17:51:49.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "app.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.component.spec.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\app.component.spec.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.component.spec.ts",
+              "RelativeToolTip": "UI\\src\\app\\app.component.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-10T17:49:03.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "navbar.component.html",
               "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.html",
               "RelativeDocumentMoniker": "UI\\src\\app\\components\\navbar\\navbar.component.html",
               "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.html",
               "RelativeToolTip": "UI\\src\\app\\components\\navbar\\navbar.component.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-03-07T18:51:13.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "navbar.component.spec.ts",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.spec.ts",
-              "RelativeDocumentMoniker": "UI\\src\\app\\components\\navbar\\navbar.component.spec.ts",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.spec.ts",
-              "RelativeToolTip": "UI\\src\\app\\components\\navbar\\navbar.component.spec.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-07T18:51:12.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "app-routing.module.ts",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app-routing.module.ts",
-              "RelativeDocumentMoniker": "UI\\src\\app\\app-routing.module.ts",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app-routing.module.ts",
-              "RelativeToolTip": "UI\\src\\app\\app-routing.module.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-07T18:49:38.223Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "navbar.component.ts",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.ts",
-              "RelativeDocumentMoniker": "UI\\src\\app\\components\\navbar\\navbar.component.ts",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.ts",
-              "RelativeToolTip": "UI\\src\\app\\components\\navbar\\navbar.component.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-07T18:51:10.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "main.ts",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\main.ts",
-              "RelativeDocumentMoniker": "UI\\src\\main.ts",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\main.ts",
-              "RelativeToolTip": "UI\\src\\main.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-03-07T18:37:26.602Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ApplicationDbContextModelSnapshot.cs",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeDocumentMoniker": "Products\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "RelativeToolTip": "Products\\Migrations\\ApplicationDbContextModelSnapshot.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T18:14:33.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "20250306182946_InitialCreate.cs",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Migrations\\20250306182946_InitialCreate.cs",
-              "RelativeDocumentMoniker": "Products\\Migrations\\20250306182946_InitialCreate.cs",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Migrations\\20250306182946_InitialCreate.cs",
-              "RelativeToolTip": "Products\\Migrations\\20250306182946_InitialCreate.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-07T18:14:28.165Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Products\\Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Products\\Controllers\\ProductController.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAA9wCkAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwC8AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-06T18:02:13.234Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Products\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Models\\Product.cs",
-              "RelativeToolTip": "Products\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T18:01:47.12Z",
+              "DocumentIndex": 19,
+              "Title": "app.module.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.module.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\app.module.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.module.ts",
+              "RelativeToolTip": "UI\\src\\app\\app.module.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-07T19:05:27.368Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\appsettings.json",
-              "RelativeDocumentMoniker": "Products\\appsettings.json",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\appsettings.json",
-              "RelativeToolTip": "Products\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Products\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Products\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-03-06T17:53:10.749Z"
+              "WhenOpened": "2025-03-10T17:34:51.287Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 20,
+              "Title": "product-form.component.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-form\\product-form.component.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.ts",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-form\\product-form.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-07T18:52:28.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Products\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Products\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T17:59:48.613Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Program.cs",
               "RelativeDocumentMoniker": "Products\\Program.cs",
@@ -344,15 +380,125 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Products\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Products\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\appsettings.json",
+              "RelativeDocumentMoniker": "Products\\appsettings.json",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\appsettings.json",
+              "RelativeToolTip": "Products\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-06T17:53:10.749Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Products\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Models\\Product.cs",
+              "RelativeToolTip": "Products\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-06T17:59:48.613Z"
+              "WhenOpened": "2025-03-06T18:01:47.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "product-form.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.spec.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-form\\product-form.component.spec.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.spec.ts",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-form\\product-form.component.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-07T18:54:07.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "product-form.component.html",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.html",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\product-form\\product-form.component.html",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\product-form\\product-form.component.html",
+              "RelativeToolTip": "UI\\src\\app\\components\\product-form\\product-form.component.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-07T19:04:28.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "app.component.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.component.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\app.component.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\app.component.ts",
+              "RelativeToolTip": "UI\\src\\app\\app.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-07T19:10:57.743Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "navbar.component.spec.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.spec.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\navbar\\navbar.component.spec.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.spec.ts",
+              "RelativeToolTip": "UI\\src\\app\\components\\navbar\\navbar.component.spec.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-07T18:51:12.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "navbar.component.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.ts",
+              "RelativeDocumentMoniker": "UI\\src\\app\\components\\navbar\\navbar.component.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\app\\components\\navbar\\navbar.component.ts",
+              "RelativeToolTip": "UI\\src\\app\\components\\navbar\\navbar.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-07T18:51:10.916Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "main.ts",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\main.ts",
+              "RelativeDocumentMoniker": "UI\\src\\main.ts",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\UI\\src\\main.ts",
+              "RelativeToolTip": "UI\\src\\main.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-03-07T18:37:26.602Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "ApplicationDbContextModelSnapshot.cs",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "Products\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "RelativeToolTip": "Products\\Migrations\\ApplicationDbContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T18:14:33.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "20250306182946_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Migrations\\20250306182946_InitialCreate.cs",
+              "RelativeDocumentMoniker": "Products\\Migrations\\20250306182946_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\GB\\Desktop\\Projetos\\Csharp\\UnicorEcommerce\\Products\\Migrations\\20250306182946_InitialCreate.cs",
+              "RelativeToolTip": "Products\\Migrations\\20250306182946_InitialCreate.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T18:14:28.165Z"
             }
           ]
         }
