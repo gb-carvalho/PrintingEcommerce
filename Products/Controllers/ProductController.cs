@@ -38,5 +38,21 @@ namespace Products.Controllers
 
 			return Created("", product);
 		}
+
+		[HttpDelete("{id}")]
+		public async Task<IActionResult> DeleteProduct(int id)
+		{
+			Product? product = await _context.Products.FindAsync(id);
+
+			if (product == null)
+			{
+				return BadRequest("Produto inválido.");
+			}
+
+			_context.Products.Remove(product);
+			await _context.SaveChangesAsync();
+
+			return NoContent();
+		}
 	}
 }
