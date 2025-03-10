@@ -1,0 +1,67 @@
+# Ignore build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Dd]istro/
+[Dd]ebug|Release/
+[Aa]ssemblyInfo.cs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.userosscache
+*.suo
+*.userprefs
+.idea/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# VS Code config folder
+.vscode/
+
+# JetBrains Rider
+.idea/
+
+# User-specific files
+*.swp
+
+# VS2022 config files
+.vs/
+.vs2019/
+.vs2017/
+
+# Windows Installer files
+Thumbs.db
+ehthumbs.db
+
+# npm and yarn
+node_modules/
+
+# Publish folder
+publish/
+
+# SQL Server files
+*.mdf
+*.ldf
+
+# Azure Functions artifacts
+.local/
+
+# DotCover
+.idea/
+
+# User-specific files for NuGet
+.nuget/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
