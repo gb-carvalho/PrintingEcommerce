@@ -7,16 +7,16 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Users.Controllers
 {
-    [ApiController]
-    [Route("[controller]")]
-    public class UserController : ControllerBase
-    {
-        private readonly UserManager<User> _userManager;
+	[ApiController]
+	[Route("[controller]")]
+	public class UserController : ControllerBase
+	{
+		private readonly UserManager<User> _userManager;
 
-        public UserController(UserManager<User> userManager)
-        {
-            _userManager = userManager;
-        }
+		public UserController(UserManager<User> userManager)
+		{
+			_userManager = userManager;
+		}
 
 		[HttpGet]
 		public async Task<IActionResult> GetUsers()
@@ -25,26 +25,44 @@ namespace Users.Controllers
 			return Ok(users);
 
 		}
-		
+
 		[HttpPost("register")]
-        public async Task<IActionResult> Register([FromBody] RegisterUserDto user)
-        {
-            if (!ModelState.IsValid)
-                return BadRequest(ModelState);
-				
-			var existingUser = await _userManager.FindByEmailAsync(user.Email);
+		public async Task<IActionResult> Register([FromBody] RegisterUserDto user)
+		{
+			if (!ModelState.IsValid)
+				return BadRequest(ModelState);
+
+			User? existingUser = await _userManager.FindByEmailAsync(user.Email);
 			if (existingUser != null)
 				return BadRequest("Usuário já existe com este e-mail.");
 
-			var createdUser = new User { Name = user.Name, Email = user.Email, UserName = user.Email };
+			User createdUser = new User { Name = user.Name, Email = user.Email, UserName = user.Email };
 
-            var result = await _userManager.CreateAsync(createdUser, user.Password);
+			IdentityResult? result = await _userManager.CreateAsync(createdUser, user.Password);
 
 			if (!result.Succeeded)
 				return BadRequest(result.Errors);
 
 			return Ok("Usuário registrado com sucesso!");
 
+		}
+
+		[HttpDelete("{id}")]
+		public async Task<IActionResult> DeleteUser(string id)
+		{
+			User? user = await _userManager.FindByIdAsync(id);
+			if (user == null)
+			{
+				return NotFound("Usuário não encontrado.");
+			}
+
+			var result = await _userManager.DeleteAsync(user);
+			if (!result.Succeeded)
+			{
+				return BadRequest(result.Errors);
+			}
+
+			return Ok("Usuário deletado com sucesso!");
 		}
 	}
 
