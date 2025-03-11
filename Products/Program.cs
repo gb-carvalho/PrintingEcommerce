@@ -12,7 +12,9 @@ builder.Services.AddCors(options =>
 			.AllowAnyMethod());
 });
 
-builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
+	builder.Configuration.GetConnectionString("DefaultConnection")
+	));
 
 // Add services to the container.
 builder.Services.AddControllers();
