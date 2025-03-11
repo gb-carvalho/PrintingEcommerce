@@ -8,7 +8,7 @@ namespace Products.Controllers
 {
 	[ApiController]
 	[Route("[controller]")]
-	public class ProductController : Controller
+	public class ProductController : ControllerBase
 	{
 
 		private readonly ApplicationDbContext _context;

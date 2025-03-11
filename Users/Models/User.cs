@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace Users.Models
 {
     public class User : IdentityUser
     {
-        public string? Name { get; set; }
-    }
+		[Required]
+		public required string Name { get; set; }
+	}
 }
