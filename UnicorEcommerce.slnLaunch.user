@@ -7,11 +7,6 @@
         "Action": "Start"
       },
       {
-        "Path": "UI\\UI.esproj",
-        "Action": "Start",
-        "DebugTarget": "localhost (Chrome)"
-      },
-      {
         "Path": "Users\\Users.csproj",
         "Action": "Start"
       }

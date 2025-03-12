@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Products.Data;
 using Products.Models;
@@ -26,6 +27,7 @@ namespace Products.Controllers
 		}
 
 		[HttpPost]
+		[Authorize]
 		public async Task<IActionResult> CreateProduct([FromBody] Product product)
 		{
 			if (product == null)
@@ -40,6 +42,7 @@ namespace Products.Controllers
 		}
 
 		[HttpDelete("{id}")]
+		[Authorize]
 		public async Task<IActionResult> DeleteProduct(int id)
 		{
 			Product? product = await _context.Products.FindAsync(id);
