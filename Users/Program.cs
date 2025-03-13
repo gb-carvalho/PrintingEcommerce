@@ -10,7 +10,14 @@ using Microsoft.OpenApi.Models;
 var builder = WebApplication.CreateBuilder(args);
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
 
-// Add services to the container.
+var corsPolicy = "AllowSpecificOrigins";
+builder.Services.AddCors(options =>
+{
+	options.AddPolicy(corsPolicy,
+		policy => policy.WithOrigins("http://localhost:51745")
+			.AllowAnyHeader()
+			.AllowAnyMethod());
+});
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
 	builder.Configuration.GetConnectionString("DefaultConnection")
@@ -88,6 +95,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.UseCors(corsPolicy);
 app.UseAuthentication();
 app.UseAuthorization();
 

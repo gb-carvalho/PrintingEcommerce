@@ -10,6 +10,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
 import { FormsModule } from '@angular/forms';
 import { ProductListAdminComponent } from './components/product-list-admin/product-list-admin.component';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ProductListAdminComponent } from './components/product-list-admin/produ
     HomeComponent,
     ContactComponent,
     ProductFormComponent,
-    ProductListAdminComponent
+    ProductListAdminComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,10 @@
       {
         "Path": "Users\\Users.csproj",
         "Action": "Start"
+      },
+      {
+        "Path": "UI\\UI.esproj",
+        "Action": "Start"
       }
     ]
   }

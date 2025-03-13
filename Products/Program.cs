@@ -21,7 +21,6 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 	builder.Configuration.GetConnectionString("DefaultConnection")
 	));
 
-// Add services to the container.
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

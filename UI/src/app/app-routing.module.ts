@@ -5,13 +5,16 @@ import { ProductListComponent } from './components/product-list/product-list.com
 import { ContactComponent } from './components/contact/contact.component'
 import { ProductFormComponent } from './components/product-form/product-form.component'
 import { ProductListAdminComponent } from './components/product-list-admin/product-list-admin.component'
+import { LoginComponent } from './components/login/login.component'
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'product-list', component: ProductListComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'product-form', component: ProductFormComponent },
-  { path: 'product-list-admin', component: ProductListAdminComponent }
+  { path: 'product-list-admin', component: ProductListAdminComponent },
+  { path: 'login', component: LoginComponent }
 ];
 
 @NgModule({
