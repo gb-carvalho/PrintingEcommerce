@@ -21,7 +21,7 @@ namespace Products.Presentation.Controllers
 		[HttpGet]
 		public async Task<IActionResult> GetProducts()
 		{
-			var products = await _productService.GetAllProductsAsync();
+			IEnumerable<ProductDto> products = await _productService.GetAllProductsAsync();
 			return Ok(products);
 		}
 
