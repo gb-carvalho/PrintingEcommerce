@@ -20,7 +20,9 @@ export class LoginComponent {
       next: (response: any) => {
         const token = response.token;
         this.authService.saveToken(token);
-        this.router.navigate(['/']);
+        this.router.navigate(['/']).then(() => {
+          window.location.reload(); 
+        });
       },
       error: (error) => {
         this.errorMessage = 'Credenciais Inválidas';
