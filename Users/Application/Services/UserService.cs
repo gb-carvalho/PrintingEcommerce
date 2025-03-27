@@ -7,6 +7,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using System.Data;
 
 namespace Users.Application.Services
 {
@@ -14,33 +15,68 @@ namespace Users.Application.Services
 	{
 		private readonly IConfiguration _configuration;
 		private readonly IUserRepository _userRepository;
+		private readonly UserManager<User> _userManager;
+		private readonly RoleManager<IdentityRole> _roleManager;
 
-		public UserService(IConfiguration configuration, IUserRepository userRepository)
+
+		public UserService(IConfiguration configuration, IUserRepository userRepository, 
+							RoleManager<IdentityRole> roleManager,	UserManager<User> userManager)
 		{
 			_configuration = configuration;
 			_userRepository = userRepository;
+			_roleManager = roleManager;
+			_userManager = userManager;
 		}
 
 		public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
 		{
 			IEnumerable<User> users = await _userRepository.GetAllAsync();
-			return users.Select(u => new UserDto { Id = u.Id, Name = u.Name, Email = u.Email ?? "" });
+
+			List<UserDto> userDtos = new List<UserDto>();
+
+			foreach(User user in users)
+			{
+				var roles = await _userManager.GetRolesAsync(user);
+
+				UserDto userDto = new UserDto
+				{
+					Id = user.Id,
+					Name = user.Name,
+					Email = user.Email ?? "",
+					Role = roles.FirstOrDefault() ?? ""
+				};
+
+				userDtos.Add(userDto);
+			}
+
+			return userDtos;
 		}
 		public async Task<UserDto?> GetUserByIdAsync(string id)
 		{
 			User? user = await _userRepository.GetByIdAsync(id);
-			return user == null ? null : new UserDto { Id = user.Id, Name = user.Name, Email = user.Email ?? "" };
+			if (user == null) 
+				return null;
+			var roles = await _userManager.GetRolesAsync(user);
+			return new UserDto { Id = user.Id, Name = user.Name, Email = user.Email ?? "", Role = roles.FirstOrDefault()};
 		}
 		public async Task<UserDto?> GetUserByEmailAsync(string email)
 		{
 			User? user = await _userRepository.GetByEmailAsync(email);
-			return user == null ? null : new UserDto { Id = user.Id, Name = user.Name, Email = user.Email ?? "" };
+			if (user == null)
+				return null;
+			var roles = await _userManager.GetRolesAsync(user);
+			return new UserDto { Id = user.Id, Name = user.Name, Email = user.Email ?? "", Role = roles.FirstOrDefault()};
 		}
 
-		public async Task<IdentityResult> CreateUserAsync(UserDto user, string password)
+		public async Task<IdentityResult> CreateUserAsync(UserDto user, string password, string role = "User")
 		{
 			User newUser = new User { Name = user.Name, Email = user.Email ?? "", UserName = user.Email };
-			return await _userRepository.CreateAsync(newUser, password);
+			IdentityResult result = await _userRepository.CreateAsync(newUser, password);
+			if (result.Succeeded)
+			{
+				return await AssignRoleToUserAsync(newUser.Id, role);
+			}
+			return result;
 		}
 
 		public async Task<IdentityResult> DeleteUserAsync(string id)
@@ -65,7 +101,8 @@ namespace Users.Application.Services
 			{
 				new Claim(JwtRegisteredClaimNames.Sub, user.Id ?? ""),
 				new Claim(JwtRegisteredClaimNames.Email, user.Email ?? ""),
-				new Claim(ClaimTypes.Name, user.Name)
+				new Claim(ClaimTypes.Name, user.Name),
+				new Claim(ClaimTypes.Role, user.Role ?? "")
 			};
 
 			var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
@@ -81,5 +118,64 @@ namespace Users.Application.Services
 			return new JwtSecurityTokenHandler().WriteToken(token);
 		}
 
-	}
+		public async Task<IdentityResult> AssignRoleToUserAsync(string userId, string newRole)
+		{
+			User? user = await _userManager.FindByIdAsync(userId);
+			if (user == null)
+			{
+				return IdentityResult.Failed(new IdentityError { Description = "Usuário não encontrado." });
+			}
+
+			bool roleExists = await _roleManager.RoleExistsAsync(newRole);
+			if (!roleExists)
+			{
+				return IdentityResult.Failed(new IdentityError { Description = "Role não existe." });
+			}
+
+			var currentRoles = await _userManager.GetRolesAsync(user);
+			await _userManager.RemoveFromRolesAsync(user, currentRoles);
+
+			return await _userManager.AddToRoleAsync(user, newRole);
+		}
+		public async Task EnsureRolesCreated()
+		{
+			string[] roles = new[] { "Admin", "User" };
+			foreach (string role in roles)
+			{
+				if (!await _roleManager.RoleExistsAsync(role))
+				{
+					await _roleManager.CreateAsync(new IdentityRole(role));
+				}
+			}
+		}
+		public async Task EnsureAdminCreated()
+		{
+			string adminEmail = "admin@example.com";
+			string adminPassword = "Admin123@";
+
+			if ( await _roleManager.RoleExistsAsync("admin")) 
+			{
+				await _roleManager.CreateAsync(new IdentityRole("Admin"));
+			}
+
+			User? adminUser = await _userManager.FindByEmailAsync(adminEmail);
+			if(adminUser == null)
+			{
+				adminUser = new User { UserName = adminEmail, Email = adminEmail, Name = "Admin"};
+				IdentityResult result = await _userManager.CreateAsync(adminUser, adminPassword);
+				if (result.Succeeded)
+				{
+					await _userManager.AddToRoleAsync(adminUser, "Admin");
+				}
+			}
+			else
+			{
+				var roles = await _userManager.GetRolesAsync(adminUser);
+				if (!roles.Contains("Admin"))
+				{
+					await _userManager.AddToRoleAsync(adminUser, "Admin");
+				}
+			}
+		}
+	}	
 }

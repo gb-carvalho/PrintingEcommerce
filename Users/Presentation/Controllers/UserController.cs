@@ -21,7 +21,7 @@ namespace Users.Presentation.Controllers
 		}
 
 		[HttpGet]
-		[Authorize(AuthenticationSchemes = "Bearer")]
+		[Authorize(AuthenticationSchemes = "Bearer", Roles = "Admin")]
 		public async Task<IActionResult> GetUsers()
 		{
 			var users = await _userService.GetAllUsersAsync();
@@ -50,7 +50,7 @@ namespace Users.Presentation.Controllers
 		}
 
 		[HttpDelete("{id}")]
-		[Authorize(AuthenticationSchemes = "Bearer")]
+		[Authorize(AuthenticationSchemes = "Bearer", Roles = "Admin")]
 		public async Task<IActionResult> DeleteUser(string id)
 		{
 			UserDto? user = await _userService.GetUserByIdAsync(id);

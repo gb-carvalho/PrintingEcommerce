@@ -33,7 +33,8 @@ builder.Services.AddScoped<UserService>();
 // Adicionar Identity
 builder.Services.AddIdentity<User, IdentityRole>()
 	.AddEntityFrameworkStores<ApplicationDbContext>()
-	.AddDefaultTokenProviders();
+	.AddDefaultTokenProviders()
+	.AddRoles<IdentityRole>();
 
 builder.Services.AddControllers();
 
@@ -89,7 +90,11 @@ builder.Services
 			IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Secret"] ?? ""))
 		};
 	});
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+	options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+	options.AddPolicy("UserOnly", policy => policy.RequireRole("User"));
+});
 
 var app = builder.Build();	
 
@@ -107,5 +112,14 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
+
+using(var scope = app.Services.CreateScope())
+{
+	RoleManager<IdentityRole> roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
+	UserService userService = scope.ServiceProvider.GetRequiredService<UserService>();
+
+	await userService.EnsureRolesCreated();
+	await userService.EnsureAdminCreated();
+}
 
 app.Run();
