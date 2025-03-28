@@ -11,7 +11,7 @@ export class NavbarComponent {
 
   isLoggedIn: boolean = false;
 
-  constructor(private authService: AuthService) { }
+  constructor(public authService: AuthService) { }
 
   ngOnInit() {
     this.isLoggedIn = this.authService.isAuthenticated();

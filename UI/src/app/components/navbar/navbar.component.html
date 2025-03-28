@@ -19,10 +19,10 @@
           <a class="nav-link" routerLink="contact" routerLinkActiver="active">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="product-form" routerLinkActiver="active" *ngIf="isLoggedIn">Create-Product</a>
+          <a class="nav-link" routerLink="product-form" routerLinkActiver="active" *ngIf="authService.hasRole('Admin')">Create-Product</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="product-list-admin" routerLinkActiver="active" *ngIf="isLoggedIn">Products-admin</a>
+          <a class="nav-link" routerLink="product-list-admin" routerLinkActiver="active" *ngIf="authService.hasRole('Admin')">Products-admin</a>
         </li>
       </ul>
       <ul class="navbar-nav ms-auto me-3">

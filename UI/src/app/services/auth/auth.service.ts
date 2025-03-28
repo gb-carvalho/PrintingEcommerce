@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
+import { JwtPayload, jwtDecode } from 'jwt-decode';
 
 @Injectable({
   providedIn: 'root'
@@ -37,5 +38,20 @@ export class AuthService {
   getAuthHeaders(): HttpHeaders {
     const token = this.getToken();
     return new HttpHeaders().set('Authorization', `Bearer ${token}`);
+  }
+
+  getRole(): string {
+    const token = this.getToken();
+    if (token == null) return '';
+
+    const decodedToken = jwtDecode<{ [key: string]: any }>(token);
+    const role = decodedToken["http://schemas.microsoft.com/ws/2008/06/identity/claims/role"]
+
+    return role;
+  }
+
+  hasRole(requiredRole: string): boolean
+  {
+    return this.getRole() === requiredRole;
   }
 }

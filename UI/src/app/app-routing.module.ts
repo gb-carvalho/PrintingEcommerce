@@ -7,14 +7,16 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { ProductListAdminComponent } from './components/product-list-admin/product-list-admin.component'
 import { LoginComponent } from './components/login/login.component'
 import { authGuard } from './guards/auth/auth.guard'
+import { adminGuard } from './guards/admin/admin.guard'
+
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'product-list', component: ProductListComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'product-form', component: ProductFormComponent, canActivate: [authGuard] },
-  { path: 'product-list-admin', component: ProductListAdminComponent, canActivate: [authGuard] },
+  { path: 'product-form', component: ProductFormComponent, canActivate: [adminGuard] },
+  { path: 'product-list-admin', component: ProductListAdminComponent, canActivate: [adminGuard] },
   { path: 'login', component: LoginComponent }
 ];
 

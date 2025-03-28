@@ -65,7 +65,7 @@ namespace Users.Application.Services
 			if (user == null)
 				return null;
 			var roles = await _userManager.GetRolesAsync(user);
-			return new UserDto { Id = user.Id, Name = user.Name, Email = user.Email ?? "", Role = roles.FirstOrDefault()};
+			return new UserDto { Id = user.Id, Name = user.Name, Email = user.Email ?? "", Role = roles.FirstOrDefault()	};
 		}
 
 		public async Task<IdentityResult> CreateUserAsync(UserDto user, string password, string role = "User")
