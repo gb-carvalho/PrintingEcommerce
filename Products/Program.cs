@@ -80,7 +80,11 @@ builder.Services
 			IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Secret"] ?? ""))
 		};
 	});
-builder.Services.AddAuthorization();
+builder.Services.AddAuthorization(options =>
+{
+	options.AddPolicy("AdminOnly", policy => policy.RequireRole("Admin"));
+	options.AddPolicy("UserOnly", policy => policy.RequireRole("User"));
+});
 
 var app = builder.Build();
 

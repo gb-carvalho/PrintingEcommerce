@@ -26,7 +26,7 @@ namespace Products.Presentation.Controllers
 		}
 
 		[HttpPost]
-		[Authorize]
+		[Authorize(Roles = "Admin")]
 		public async Task<IActionResult> CreateProduct([FromBody] ProductDto productDto)
 		{
 			if (productDto == null)
@@ -40,7 +40,7 @@ namespace Products.Presentation.Controllers
 		}
 
 		[HttpDelete("{id}")]
-		[Authorize]
+		[Authorize(Roles = "Admin")]
 		public async Task<IActionResult> DeleteProduct(int id)
 		{
 			ProductDto? product = await _productService.GetProductByIdAsync(id);
