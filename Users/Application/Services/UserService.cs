@@ -15,17 +15,15 @@ namespace Users.Application.Services
 	{
 		private readonly IConfiguration _configuration;
 		private readonly IUserRepository _userRepository;
-		private readonly UserManager<User> _userManager;
 		private readonly RoleManager<IdentityRole> _roleManager;
 
 
 		public UserService(IConfiguration configuration, IUserRepository userRepository, 
-							RoleManager<IdentityRole> roleManager,	UserManager<User> userManager)
+							RoleManager<IdentityRole> roleManager)
 		{
 			_configuration = configuration;
 			_userRepository = userRepository;
 			_roleManager = roleManager;
-			_userManager = userManager;
 		}
 
 		public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
@@ -36,7 +34,7 @@ namespace Users.Application.Services
 
 			foreach(User user in users)
 			{
-				var roles = await _userManager.GetRolesAsync(user);
+				var roles = await _userRepository.GetAllRolesAsync(user);
 
 				UserDto userDto = new UserDto
 				{
@@ -56,7 +54,7 @@ namespace Users.Application.Services
 			User? user = await _userRepository.GetByIdAsync(id);
 			if (user == null) 
 				return null;
-			var roles = await _userManager.GetRolesAsync(user);
+			var roles = await _userRepository.GetAllRolesAsync(user);
 			return new UserDto { Id = user.Id, Name = user.Name, Email = user.Email ?? "", Role = roles.FirstOrDefault()};
 		}
 		public async Task<UserDto?> GetUserByEmailAsync(string email)
@@ -64,7 +62,7 @@ namespace Users.Application.Services
 			User? user = await _userRepository.GetByEmailAsync(email);
 			if (user == null)
 				return null;
-			var roles = await _userManager.GetRolesAsync(user);
+			var roles = await _userRepository.GetAllRolesAsync(user);
 			return new UserDto { Id = user.Id, Name = user.Name, Email = user.Email ?? "", Role = roles.FirstOrDefault()	};
 		}
 
@@ -120,7 +118,7 @@ namespace Users.Application.Services
 
 		public async Task<IdentityResult> AssignRoleToUserAsync(string userId, string newRole)
 		{
-			User? user = await _userManager.FindByIdAsync(userId);
+			User? user = await _userRepository.GetByIdAsync(userId);
 			if (user == null)
 			{
 				return IdentityResult.Failed(new IdentityError { Description = "Usuário não encontrado." });
@@ -132,10 +130,10 @@ namespace Users.Application.Services
 				return IdentityResult.Failed(new IdentityError { Description = "Role não existe." });
 			}
 
-			var currentRoles = await _userManager.GetRolesAsync(user);
-			await _userManager.RemoveFromRolesAsync(user, currentRoles);
+			var currentRoles = await _userRepository.GetAllRolesAsync(user);
+			await _userRepository.RemoveRolesAsync(user, currentRoles);
 
-			return await _userManager.AddToRoleAsync(user, newRole);
+			return await _userRepository.AddRolesAsync(user, newRole);
 		}
 		public async Task EnsureRolesCreated()
 		{
@@ -158,22 +156,22 @@ namespace Users.Application.Services
 				await _roleManager.CreateAsync(new IdentityRole("Admin"));
 			}
 
-			User? adminUser = await _userManager.FindByEmailAsync(adminEmail);
+			User? adminUser = await _userRepository.GetByEmailAsync(adminEmail);
 			if(adminUser == null)
 			{
 				adminUser = new User { UserName = adminEmail, Email = adminEmail, Name = "Admin"};
-				IdentityResult result = await _userManager.CreateAsync(adminUser, adminPassword);
+				IdentityResult result = await _userRepository.CreateAsync(adminUser, adminPassword);
 				if (result.Succeeded)
 				{
-					await _userManager.AddToRoleAsync(adminUser, "Admin");
+					await _userRepository.AddRolesAsync(adminUser, "Admin");
 				}
 			}
 			else
 			{
-				var roles = await _userManager.GetRolesAsync(adminUser);
+				var roles = await _userRepository.GetAllRolesAsync(adminUser);
 				if (!roles.Contains("Admin"))
 				{
-					await _userManager.AddToRoleAsync(adminUser, "Admin");
+					await _userRepository.AddRolesAsync(adminUser, "Admin");
 				}
 			}
 		}

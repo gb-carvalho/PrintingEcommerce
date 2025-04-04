@@ -50,5 +50,19 @@ namespace Users.Infraestructure.Repositories
 		{
 			return await _userManager.CheckPasswordAsync(user, password);
 		}
+
+		public async Task<IList<string>> GetAllRolesAsync(User user)
+		{
+			return await _userManager.GetRolesAsync(user);
+		}
+
+		public async Task RemoveRolesAsync(User user, IEnumerable<string> roles)
+		{
+			await _userManager.RemoveFromRolesAsync(user, roles);
+		}
+		public async Task<IdentityResult> AddRolesAsync(User user, string role) 
+		{
+			return await _userManager.AddToRoleAsync(user, role);
+		}
 	}
 }
