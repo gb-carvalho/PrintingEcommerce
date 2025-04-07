@@ -4,6 +4,7 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
+  justify-content: center;
 }
 
 /* Estilo do card de cada produto */
@@ -55,4 +56,14 @@
     font-weight: bold;
     color: #007bff;
     margin: 0;
+  }
+  
+  .product-action-div{
+    position: relative;
+  }
+
+  .product-action {
+    position: absolute;
+    top: 5px;
+    right: 5px;
   }

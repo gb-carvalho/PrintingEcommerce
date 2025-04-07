@@ -9,8 +9,8 @@ import { HomeComponent } from './components/home/home.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
 import { FormsModule } from '@angular/forms';
-import { ProductListAdminComponent } from './components/product-list-admin/product-list-admin.component';
 import { LoginComponent } from './components/login/login.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +20,8 @@ import { LoginComponent } from './components/login/login.component';
     HomeComponent,
     ContactComponent,
     ProductFormComponent,
-    ProductListAdminComponent,
-    LoginComponent
+    LoginComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,

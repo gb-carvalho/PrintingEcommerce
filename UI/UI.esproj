@@ -8,7 +8,6 @@
     <StartupCommand>npm start</StartupCommand>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="src\app\components\" />
     <Folder Include="src\app\guards\admin\" />
   </ItemGroup>
 </Project>
