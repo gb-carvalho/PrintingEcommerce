@@ -28,6 +28,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlSer
 	));
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
+builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<UserService>();
 
 // Adicionar Identity

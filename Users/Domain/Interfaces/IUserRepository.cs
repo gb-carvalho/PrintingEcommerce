@@ -1,6 +1,4 @@
 ﻿using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Primitives;
-using System.Net.Http.Headers;
 using Users.Domain.Entities;
 
 namespace Users.Domain.Interfaces

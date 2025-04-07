@@ -2,12 +2,10 @@
 using Users.Domain.Interfaces;
 using Users.Domain.Entities;
 using Microsoft.AspNetCore.Identity;
-using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
-using System.Data;
 
 namespace Users.Application.Services
 {
@@ -15,15 +13,15 @@ namespace Users.Application.Services
 	{
 		private readonly IConfiguration _configuration;
 		private readonly IUserRepository _userRepository;
-		private readonly RoleManager<IdentityRole> _roleManager;
+		private readonly IRoleRepository _roleRepository;
 
 
-		public UserService(IConfiguration configuration, IUserRepository userRepository, 
-							RoleManager<IdentityRole> roleManager)
+		public UserService(IConfiguration configuration, IUserRepository userRepository,
+							IRoleRepository roleRepository)
 		{
 			_configuration = configuration;
 			_userRepository = userRepository;
-			_roleManager = roleManager;
+			_roleRepository = roleRepository;
 		}
 
 		public async Task<IEnumerable<UserDto>> GetAllUsersAsync()
@@ -124,7 +122,7 @@ namespace Users.Application.Services
 				return IdentityResult.Failed(new IdentityError { Description = "Usuário não encontrado." });
 			}
 
-			bool roleExists = await _roleManager.RoleExistsAsync(newRole);
+			bool roleExists = await _roleRepository.RoleExistsAsync(newRole);
 			if (!roleExists)
 			{
 				return IdentityResult.Failed(new IdentityError { Description = "Role não existe." });
@@ -140,9 +138,9 @@ namespace Users.Application.Services
 			string[] roles = new[] { "Admin", "User" };
 			foreach (string role in roles)
 			{
-				if (!await _roleManager.RoleExistsAsync(role))
+				if (!await _roleRepository.RoleExistsAsync(role))
 				{
-					await _roleManager.CreateAsync(new IdentityRole(role));
+					await _roleRepository.CreateAsync(new IdentityRole(role));
 				}
 			}
 		}
@@ -151,9 +149,9 @@ namespace Users.Application.Services
 			string adminEmail = "admin@example.com";
 			string adminPassword = "Admin123@";
 
-			if ( await _roleManager.RoleExistsAsync("admin")) 
+			if ( await _roleRepository.RoleExistsAsync("admin")) 
 			{
-				await _roleManager.CreateAsync(new IdentityRole("Admin"));
+				await _roleRepository.CreateAsync(new IdentityRole("Admin"));
 			}
 
 			User? adminUser = await _userRepository.GetByEmailAsync(adminEmail);
