@@ -9,6 +9,7 @@ import { ProductService } from '../../services/product/product.service';
 })
 export class ProductFormComponent {
   product = {
+    id: 0,
     name: '',
     price: 0,
     description: ''

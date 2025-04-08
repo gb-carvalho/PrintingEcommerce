@@ -16,6 +16,7 @@
   overflow: hidden;
   width: 200px;
   transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
 }
 
   .product-card:hover {
@@ -66,4 +67,14 @@
     position: absolute;
     top: 5px;
     right: 5px;
+    color: red;
+    cursor: pointer;
   }
+
+  .product-action2 {
+    position: absolute;
+    top: 28px;
+    right: 5px;
+    cursor: pointer;
+  }
+

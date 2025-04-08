@@ -25,6 +25,17 @@ namespace Products.Presentation.Controllers
 			return Ok(products);
 		}
 
+		[HttpGet("{id}")]
+		public async Task<IActionResult> GetProduct(int id)
+		{
+			ProductDto? product = await _productService.GetProductByIdAsync(id);
+
+			if (product == null)
+				return NotFound();
+
+			return Ok(product);
+		}
+
 		[HttpPost]
 		[Authorize(Roles = "Admin")]
 		public async Task<IActionResult> CreateProduct([FromBody] ProductDto productDto)

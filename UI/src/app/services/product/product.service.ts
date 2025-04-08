@@ -4,8 +4,8 @@ import { Observable } from 'rxjs'
 import { AuthService } from '../../services/auth/auth.service'
 
 
-interface Product {
-  id?: number;
+export interface Product {
+  id: number;
   name: string;
   price: number;
   description: string;
@@ -21,6 +21,10 @@ export class ProductService {
 
   getProducts(): Observable<any[]> {
     return this.http.get<any[]>(this.apiUrl);
+  }
+
+  getProduct(id: number): Observable<Product> {
+    return this.http.get<Product>(`${this.apiUrl}/${id}`);
   }
 
   createProduct(product: Product): Observable<Product> {

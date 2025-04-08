@@ -7,7 +7,8 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { LoginComponent } from './components/login/login.component'
 import { authGuard } from './guards/auth/auth.guard'
 import { adminGuard } from './guards/admin/admin.guard'
-
+import { ProductPageComponent } from './components/product-page/product-page.component'
+ 
 
 
 const routes: Routes = [
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'product-list', component: ProductListComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'product-form', component: ProductFormComponent, canActivate: [adminGuard] },
-  { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent },
+  { path: 'product-page/:id', component: ProductPageComponent }
 ];
 
 @NgModule({

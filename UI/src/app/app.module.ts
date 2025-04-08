@@ -11,6 +11,7 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
+import { ProductPageComponent } from './components/product-page/product-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { CarouselComponent } from './components/carousel/carousel.component';
     ContactComponent,
     ProductFormComponent,
     LoginComponent,
-    CarouselComponent
+    CarouselComponent,
+    ProductPageComponent
   ],
   imports: [
     BrowserModule,
