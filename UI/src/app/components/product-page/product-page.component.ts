@@ -12,7 +12,15 @@ import { ProductService, Product } from '../../services/product/product.service'
 export class ProductPageComponent {
   productId: string | null = null;
   product: Product | null = null;
-  constructor(private productService: ProductService, private route: ActivatedRoute)   { }
+  quantity: number = 1;
+  constructor(private productService: ProductService, private route: ActivatedRoute) { }
+
+  get whatsappLink(): string {
+    if (!this.product) return '';
+    const total = this.product.price * this.quantity;
+    const text = `Olá! Gostaria de finalizar o pedido de ${this.quantity} unidade(s) do produto ${this.product.name} por R$${total.toFixed(2)}.`;
+    return `https://wa.me/5521987999131?text=${encodeURIComponent(text)}`;
+  }
 
   ngOnInit(): void {
     this.productId = this.route.snapshot.paramMap.get('id');

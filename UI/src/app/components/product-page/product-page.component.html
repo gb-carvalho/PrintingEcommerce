@@ -1,29 +1,31 @@
-<div class="container my-5">
+<div class="container my-5" *ngIf="product">
   <div class="card shadow-lg">
-    <div class="card-body" *ngIf="product">
-      <h2 class="card-title mb-4">Resumo do Pedido</h2>
-
-      <div class="row mb-3" >
-        <div class="col-md-6">
-          <h5>Produto</h5>
-          <p>{{ product.name }}</p>
-        </div>
-        <div class="col-md-3">
-          <h5>Quantidade</h5>
-          <p>1 unidade</p>
-        </div>
-        <div class="col-md-3">
-          <h5>Preço</h5>
-          <p>R$ {{ product.price }}</p>
-        </div>
+    <div class="row g-0">
+      <div class="col-md-5">
+        <img src="https://placehold.co/400x300" class="img-fluid rounded-start w-100 h-100 object-fit-cover" alt="{{ product.name }}">
       </div>
+      <div class="col-md-7">
+        <div class="card-body">
+          <h2 class="card-title mb-3">{{ product.name }}</h2>
+          <p class="card-text text-muted">{{ product.description }}</p>
+          <p class="h5 mt-4">Preço: <strong>R$ {{ product.price }}</strong></p>
 
-      <div class="text-end">
-        <a class="btn btn-success btn-lg"
-           href="https://wa.me/5521987999131?text=Olá! Gostaria de finalizar o pedido de 1 {{ product.name }} por R${{ product.price }}."
-           target="_blank">
-          <i class="fab fa-whatsapp"></i> Finalizar Pedido via WhatsApp
-        </a>
+          <div class="mt-4 mb-3">
+            <label for="quantity" class="form-label">Quantidade:</label>
+            <input id="quantity"
+                   type="number"
+                   class="form-control w-25"
+                   [(ngModel)]="quantity"
+                   min="1">
+          </div>
+
+          <p class="fw-semibold">Total: R$ {{ product.price * quantity }}</p>
+
+          <a class="btn btn-success btn-lg mt-3"
+             [href]="whatsappLink">
+            <i class="fab fa-whatsapp"></i> Finalizar Pedido via WhatsApp
+          </a>
+        </div>
       </div>
     </div>
   </div>

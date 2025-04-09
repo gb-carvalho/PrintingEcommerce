@@ -10,13 +10,13 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home</a>
+          <a class="nav-link" href="#">Início</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="product-list" routerLinkActiver="active">Products</a>
+          <a class="nav-link" routerLink="product-list" routerLinkActiver="active">Produtos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="contact" routerLinkActiver="active">Contact</a>
+          <a class="nav-link" routerLink="contact" routerLinkActiver="active">Contato</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="product-form" routerLinkActiver="active" *ngIf="authService.hasRole('Admin')">Create-Product</a>

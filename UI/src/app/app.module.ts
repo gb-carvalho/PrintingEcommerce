@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './components/login/login.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ProductPageComponent } from './components/product-page/product-page.com
     ProductFormComponent,
     LoginComponent,
     CarouselComponent,
-    ProductPageComponent
+    ProductPageComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
