@@ -4,11 +4,19 @@ import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { JwtPayload, jwtDecode } from 'jwt-decode';
 
+export interface Users {
+  id: number;
+  name: string;
+  email: number;
+  role: string;
+}
+
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
   private apiUrl = 'https://localhost:7182/User/login';
+  private apiUrlUsers = 'https://localhost:7182/User';
   private tokenKey = 'auth_token';
 
   constructor(private http: HttpClient, private router: Router) { }
@@ -53,5 +61,13 @@ export class AuthService {
   hasRole(requiredRole: string): boolean
   {
     return this.getRole() === requiredRole;
+  }
+
+  getUsers(): Observable<any[]> {
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${this.getToken()}` // Adiciona o token
+    });
+
+    return this.http.get<any[]>(this.apiUrlUsers, { headers });
   }
 }

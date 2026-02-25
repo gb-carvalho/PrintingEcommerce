@@ -8,6 +8,8 @@ import { LoginComponent } from './components/login/login.component'
 import { authGuard } from './guards/auth/auth.guard'
 import { adminGuard } from './guards/admin/admin.guard'
 import { ProductPageComponent } from './components/product-page/product-page.component'
+import { UsersListComponent } from './components/users-list/users-list.component'
+
  
 
 
@@ -17,7 +19,8 @@ const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'product-form', component: ProductFormComponent, canActivate: [adminGuard] },
   { path: 'login', component: LoginComponent },
-  { path: 'product-page/:id', component: ProductPageComponent }
+  { path: 'product-page/:id', component: ProductPageComponent },
+  { path: 'users-list', component: UsersListComponent, canActivate: [adminGuard] },
 ];
 
 @NgModule({
