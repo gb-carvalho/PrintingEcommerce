@@ -19,4 +19,12 @@ namespace Users.Application.DTOs
 
 		public string? Role { get; set; } = null!;
 	}
+
+	public class UpdateUserDto
+	{
+		public string Id { get; set; } = default!;
+		public string? Name { get; set; }
+		public string? Email { get; set; }
+		public string? Role { get; set; }
+	}
 }

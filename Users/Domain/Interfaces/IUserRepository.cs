@@ -14,5 +14,6 @@ namespace Users.Domain.Interfaces
 		Task<IList<string>> GetAllRolesAsync(User user);
 		Task RemoveRolesAsync(User user, IEnumerable<string> roles);
 		Task<IdentityResult> AddRolesAsync(User user, string role);
+		Task<IdentityResult> UpdateUserAsync(User user);
 	}
 }

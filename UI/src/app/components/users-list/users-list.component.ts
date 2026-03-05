@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthService } from '../../services/auth/auth.service';
 
 
@@ -12,7 +13,7 @@ export class UsersListComponent {
 
   users: any[] = [];
 
-  constructor(public authService: AuthService) { }
+  constructor(public authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
     this.authService.getUsers().subscribe({
@@ -21,8 +22,8 @@ export class UsersListComponent {
     });
   }
 
-  editUser(user: any) {
-    console.log('Editar usuário:', user);
+  editUser(id: string) {
+    this.router.navigate(['/edit-user', id]);   
   }
 
   deleteUser(id: number) {

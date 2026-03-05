@@ -64,5 +64,10 @@ namespace Users.Infraestructure.Repositories
 		{
 			return await _userManager.AddToRoleAsync(user, role);
 		}
+
+		public async Task<IdentityResult> UpdateUserAsync(User user) {
+			return await _userManager.UpdateAsync(user);
+		}
+
 	}
 }

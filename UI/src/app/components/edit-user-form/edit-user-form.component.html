@@ -1,0 +1,46 @@
+<div class="container mt-4 p-4 border rounded shadow-sm">
+  <h2 class="mb-3">Editar usuário</h2>
+
+  <form (ngSubmit)="updateUser()">
+    <!-- AQUI -->
+
+    <div class="mb-3">
+      <label for="name" class="form-label">Name</label>
+      <input type="text"
+             id="name"
+             [(ngModel)]="user.name"
+             name="name"
+             class="form-control"
+             required />
+    </div>
+
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="text"
+             id="email"
+             [(ngModel)]="user.email"
+             name="email"
+             class="form-control"
+             required />
+    </div>
+
+    <div class="mb-3">
+      <label for="role" class="form-label">Função</label>
+      <select id="role"
+              [(ngModel)]="user.role"
+              name="role"
+              class="form-select"
+              required>
+
+        <option value="Admin">Admin</option>
+        <option value="User">User</option>
+
+      </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary mb-3">
+      Salvar
+    </button>
+
+  </form>
+</div>

@@ -173,5 +173,46 @@ namespace Users.Application.Services
 				}
 			}
 		}
+
+		public async Task<IdentityResult> UpdateUserPartialAsync(UpdateUserDto userDto)
+		{
+			if (userDto.Id == null)
+			{
+				return IdentityResult.Failed(
+					new IdentityError { Description = "Id do usuário é obrigatório." });
+			}
+
+			User? user = await _userRepository.GetByIdAsync(userDto.Id);
+
+			if (user == null)
+			{
+				return IdentityResult.Failed(
+					new IdentityError { Description = "Usuário não encontrado." });
+			}
+
+			// Atualiza SOMENTE o que foi enviado
+
+			if (!string.IsNullOrWhiteSpace(userDto.Name))
+				user.Name = userDto.Name;
+
+			if (!string.IsNullOrWhiteSpace(userDto.Email))
+			{
+				user.Email = userDto.Email;
+				user.UserName = userDto.Email; // Identity usa email como username
+			}
+
+			var result = await _userRepository.UpdateUserAsync(user);
+
+			if (!result.Succeeded)
+				return result;
+
+			// Atualiza role apenas se veio no DTO
+			if (!string.IsNullOrWhiteSpace(userDto.Role))
+			{
+				return await AssignRoleToUserAsync(user.Id, userDto.Role);
+			}
+
+			return result;
+		}
 	}	
 }

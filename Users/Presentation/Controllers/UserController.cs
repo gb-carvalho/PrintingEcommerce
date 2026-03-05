@@ -28,6 +28,16 @@ namespace Users.Presentation.Controllers
 			return Ok(users);
 		}
 
+		//TODO: FAZER GET POR ID PARA USAR NO FORM DE EDIÇÃO
+		[HttpGet("{id}")]
+		[Authorize(AuthenticationSchemes = "Bearer", Roles = "Admin")]
+		public async Task<IActionResult> GetUser(string id)
+		{
+			var user = await _userService.GetUserByIdAsync(id);
+			return Ok(user);
+		}
+
+
 		[HttpPost("register")]
 		public async Task<IActionResult> Register([FromBody] UserDto user)
 		{
@@ -78,7 +88,22 @@ namespace Users.Presentation.Controllers
 			var token = _userService.GenerateJwtToken(user);
 			return Ok(new { Token = token });
 		}
-				
+
+		[HttpPatch("{id}")]
+		public async Task<IActionResult> UpdateUser(string id, UpdateUserDto dto)
+		{
+			// Segurança básica
+			if (id != dto.Id)
+				return BadRequest("Id da URL diferente do corpo.");
+
+			var result = await _userService.UpdateUserPartialAsync(dto);
+
+			if (!result.Succeeded)
+				return BadRequest(result.Errors);
+
+			return NoContent(); // 204 — sucesso sem retorno
+		}
+
 	}
 
 	public class LoginRequest

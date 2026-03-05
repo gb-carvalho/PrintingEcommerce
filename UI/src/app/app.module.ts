@@ -14,6 +14,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { ProductPageComponent } from './components/product-page/product-page.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { UsersListComponent } from './components/users-list/users-list.component';
+import { EditUserFormComponent } from './components/edit-user-form/edit-user-form.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { UsersListComponent } from './components/users-list/users-list.component
     CarouselComponent,
     ProductPageComponent,
     FooterComponent,
-    UsersListComponent
+    UsersListComponent,
+    EditUserFormComponent
   ],
   imports: [
     BrowserModule,

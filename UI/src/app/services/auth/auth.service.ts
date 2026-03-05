@@ -4,10 +4,10 @@ import { Observable } from 'rxjs';
 import { Router } from '@angular/router';
 import { JwtPayload, jwtDecode } from 'jwt-decode';
 
-export interface Users {
-  id: number;
+export interface User {
+  id: string;
   name: string;
-  email: number;
+  email: string;
   role: string;
 }
 
@@ -69,5 +69,21 @@ export class AuthService {
     });
 
     return this.http.get<any[]>(this.apiUrlUsers, { headers });
+  }
+
+  getUser(id: string): Observable<User> {
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${this.getToken()}` // Adiciona o token
+    });
+
+    return this.http.get<User>(this.apiUrlUsers + "/" + id, { headers });
+  }
+
+  updateUser(user: User): Observable<any> {
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${this.getToken()}` // Adiciona o token
+    });
+
+    return this.http.patch(this.apiUrlUsers + "/" + user.id, user, { headers })
   }
 }
