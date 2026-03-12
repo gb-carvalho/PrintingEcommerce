@@ -3,12 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import { AuthService, User } from '../../services/auth/auth.service';
 
 @Component({
-  selector: 'app-edit-user-form',
+  selector: 'app-user-form',
   standalone: false,
-  templateUrl: './edit-user-form.component.html',
-  styleUrl: './edit-user-form.component.css'
+  templateUrl: './user-form.component.html',
+  styleUrl: './user-form.component.css'
 })
-export class EditUserFormComponent {
+export class UserFormComponent {
 
 
   constructor(

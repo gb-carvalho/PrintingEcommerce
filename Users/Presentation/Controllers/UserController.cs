@@ -42,20 +42,20 @@ namespace Users.Presentation.Controllers
 		public async Task<IActionResult> Register([FromBody] UserDto user)
 		{
 			if (!ModelState.IsValid)
-				return BadRequest(ModelState);	
+				return BadRequest(ModelState);
 
 			UserDto? existingUser = await _userService.GetUserByEmailAsync(user.Email);
 			if (existingUser != null)
-				return BadRequest("Usuário já existe com este e-mail.");
+				return BadRequest(new { message = "Usuário já existe com este e-mail." });
 
-			UserDto createdUser = new UserDto { Name = user.Name, Email = user.Email};
+			UserDto createdUser = new UserDto { Name = user.Name, Email = user.Email };
 
 			IdentityResult? result = await _userService.CreateUserAsync(createdUser, user.Password);
 
 			if (!result.Succeeded)
 				return BadRequest(result.Errors);
 
-			return Ok("Usuário registrado com sucesso!");
+			return Ok(new { message = "Usuário registrado com sucesso!" });
 
 		}
 
@@ -66,7 +66,7 @@ namespace Users.Presentation.Controllers
 			UserDto? user = await _userService.GetUserByIdAsync(id);
 			if (user == null)
 			{
-				return NotFound("Usuário não encontrado.");
+				return NotFound(new { message = "Usuário não encontrado." });
 			}
 
 			IdentityResult? result = await _userService.DeleteUserAsync(id);
@@ -75,7 +75,7 @@ namespace Users.Presentation.Controllers
 				return BadRequest(result.Errors);
 			}
 
-			return Ok("Usuário deletado com sucesso!");
+			return Ok(new { message = "Usuário deletado com sucesso!" });
 		}
 
 		[HttpPost("login")]
@@ -99,7 +99,11 @@ namespace Users.Presentation.Controllers
 			var result = await _userService.UpdateUserPartialAsync(dto);
 
 			if (!result.Succeeded)
-				return BadRequest(result.Errors);
+				return BadRequest(new
+				{
+					message = "Erro ao registrar usuário",
+					errors = result.Errors
+				});
 
 			return NoContent(); // 204 — sucesso sem retorno
 		}

@@ -9,7 +9,7 @@ import { authGuard } from './guards/auth/auth.guard'
 import { adminGuard } from './guards/admin/admin.guard'
 import { ProductPageComponent } from './components/product-page/product-page.component'
 import { UsersListComponent } from './components/users-list/users-list.component'
-import { EditUserFormComponent } from './components/edit-user-form/edit-user-form.component'
+import { UserFormComponent } from './components/user-form/user-form.component'
 
 
 const routes: Routes = [
@@ -19,9 +19,9 @@ const routes: Routes = [
   { path: 'product-form', component: ProductFormComponent, canActivate: [adminGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'product-page/:id', component: ProductPageComponent },
-  { path: 'users-list', component: UsersListComponent, canActivate: [adminGuard] },
-  { path: 'edit-user/:id', component: EditUserFormComponent, canActivate: [adminGuard] },
-
+  { path: 'users/list', component: UsersListComponent, canActivate: [adminGuard] },
+  { path: 'users/edit/:id', component: UserFormComponent, canActivate: [adminGuard] },
+  { path: 'users/create', component: UserFormComponent, canActivate: [adminGuard] },
 ];
 
 @NgModule({

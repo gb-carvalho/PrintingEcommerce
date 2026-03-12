@@ -23,10 +23,14 @@ export class UsersListComponent {
   }
 
   editUser(id: string) {
-    this.router.navigate(['/edit-user', id]);   
+    this.router.navigate(['users/edit/', id]);   
   }
 
-  deleteUser(id: number) {
+  deleteUser(id: string) {
     console.log('Excluir usuário:', id);
+    this.authService.deleteUser(id).subscribe(response => {
+      this.users = this.users.filter(user => user.id !== id);
+      alert('Usuário deletado com sucesso!');
+    });
   }
 }

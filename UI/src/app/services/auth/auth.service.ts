@@ -86,4 +86,12 @@ export class AuthService {
 
     return this.http.patch(this.apiUrlUsers + "/" + user.id, user, { headers })
   }
+
+  deleteUser(id: string): Observable<any> {
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${this.getToken()}` // Adiciona o token
+    });
+
+    return this.http.delete(this.apiUrlUsers + "/" + id, { headers })
+  }
 }
