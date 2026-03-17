@@ -26,6 +26,10 @@ export class UsersListComponent {
     this.router.navigate(['users/edit/', id]);   
   }
 
+  createUser() {
+    this.router.navigate(['users/create/']);
+  }
+
   deleteUser(id: string) {
     console.log('Excluir usuário:', id);
     this.authService.deleteUser(id).subscribe(response => {

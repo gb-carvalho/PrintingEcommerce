@@ -9,6 +9,7 @@ export interface User {
   name: string;
   email: string;
   role: string;
+  password?: string
 }
 
 @Injectable({
@@ -93,5 +94,13 @@ export class AuthService {
     });
 
     return this.http.delete(this.apiUrlUsers + "/" + id, { headers })
+  }
+
+  createUser(user: User): Observable<any> {
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${this.getToken()}` // Adiciona o token
+    });
+
+    return this.http.post(this.apiUrlUsers + "/register", user, { headers })
   }
 }

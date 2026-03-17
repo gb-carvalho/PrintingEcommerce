@@ -1,7 +1,7 @@
 <div class="container mt-4 p-4 border rounded shadow-sm">
-  <h2 class="mb-3">Editar usuário</h2>
+  <h2 class="mb-3">{{ user.id ? "Editar usuário" : "Criar usuário" }}</h2>
 
-  <form (ngSubmit)="updateUser()">
+  <form (ngSubmit)="persistUser()">
     <!-- AQUI -->
 
     <div class="mb-3">
@@ -36,6 +36,15 @@
         <option value="User">User</option>
 
       </select>
+    </div>
+
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" id="password" [(ngModel)]="user.password" name="password" class="form-control" required />
+    </div>
+
+    <div *ngIf="error" class="alert alert-danger" role="alert">
+      {{ error }}
     </div>
 
     <button type="submit" class="btn btn-primary mb-3">

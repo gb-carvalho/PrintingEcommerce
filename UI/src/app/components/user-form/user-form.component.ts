@@ -20,8 +20,12 @@ export class UserFormComponent {
     id: '',
     name: '',
     email: '',
-    role: ''
+    role: '',
+    password: ''
   };
+
+  error: string = "";
+  isEdit: boolean = this.user.id ? true : false;
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
@@ -42,9 +46,24 @@ export class UserFormComponent {
     }
   }
 
-  updateUser(): void {
-    this.authService.updateUser(this.user).subscribe(response => {
-      alert('Produto editado com sucesso!');
-    });
+  persistUser(): void {
+    if (this.isEdit) {
+      this.authService.updateUser(this.user).subscribe(response => {
+        alert('Produto editado com sucesso!');
+      });
+    } else {
+      this.authService.createUser(this.user).subscribe({
+        next: (response) => {
+          alert('Produto criado com sucesso!');
+        },
+        error: (err) => {
+          this.error = ""
+          err.error.forEach((item: any, index: number) => {
+            this.error += item.description + "\n";
+          });
+          console.log(err);
+        }
+      });
+    }
   }
 }
