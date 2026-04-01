@@ -50,6 +50,20 @@ namespace Products.Presentation.Controllers
 			return Created("", productDto);
 		}
 
+		[HttpPatch]
+		[Authorize(Roles = "Admin")]
+		public async Task<IActionResult> UpdateProduct([FromBody] ProductDto productDto)
+		{
+			if (productDto == null)
+			{
+				return BadRequest("Produto inválido.");
+			}
+
+			await _productService.UpdateProductAsync(productDto);
+
+			return Ok(productDto);
+		}
+
 		[HttpDelete("{id}")]
 		[Authorize(Roles = "Admin")]
 		public async Task<IActionResult> DeleteProduct(int id)

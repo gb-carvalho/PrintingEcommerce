@@ -31,7 +31,29 @@ export class AuthService {
   }
 
   getToken(): string | null {
-    return localStorage.getItem(this.tokenKey);
+    const token = localStorage.getItem(this.tokenKey);
+    if (!token) return null;
+
+    try {
+      // Decodifica a parte do payload do JWT
+      const payload = JSON.parse(atob(token.split('.')[1]));
+
+      // exp é em segundos → converter para ms
+      const expiration = payload.exp * 1000;
+      const now = Date.now();
+
+      if (now > expiration) {
+        // Token expirou
+        localStorage.removeItem(this.tokenKey);
+        return null;
+      }
+
+      return token;
+    } catch {
+      // Se o token estiver corrompido ou inválido
+      localStorage.removeItem(this.tokenKey);
+      return null;
+    }
   }
 
   isAuthenticated(): boolean {

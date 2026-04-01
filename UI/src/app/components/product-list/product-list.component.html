@@ -3,7 +3,7 @@
   <div class="product-card">
     <div class="product-action-div" *ngIf="authService.hasRole('Admin')">
       <i class="fa-solid fa-trash-can product-action" (click)="removeProduct(product.id)"></i>
-      <i class="fa-solid fa-pen product-action2"></i>
+      <i class="fa-solid fa-pen product-action2" (click)="editProduct(product.id)"></i>
     </div>
     <div [routerLink]="['product-page', product.id]">
       <div class="image-placeholder" >

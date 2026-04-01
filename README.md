@@ -20,6 +20,7 @@ A arquitetura adotada é baseada em microserviços, com cada funcionalidade prin
 
 ## Próximos Passos
 
-- Melhorar o front-end, expandindo a interface para oferecer uma experiência mais fluida e interativa.
-- Aprimorar o sistema de autenticação.
-- Adicionar novos microserviços, como um serviço de carrinho de compras, um serviço de pagamentos e um serviço de notificações para acompanhar pedidos e promoções.
+- Menu sanduiche mobile não funciona
+- Adicionar imagem na criação do produto
+- Adicionar troca de senha por usuário logado
+- Adicionar possibilidade de o admin resetar a senha de alguem e obrigalo a mudar a senha no próximo login

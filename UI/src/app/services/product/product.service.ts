@@ -35,6 +35,14 @@ export class ProductService {
     return this.http.post<Product>(this.apiUrl, product, { headers });
   }
 
+  updateProduct(product: Product): Observable<Product> {
+    const headers = new HttpHeaders({
+      'Authorization': `Bearer ${this.authService.getToken()}` // Adiciona o token
+    });
+
+    return this.http.patch<Product>(this.apiUrl, product, { headers });
+  }
+
   deleteProduct(id: number): Observable<void> {
     const headers = new HttpHeaders({
       'Authorization': `Bearer ${this.authService.getToken()}` // Adiciona o token

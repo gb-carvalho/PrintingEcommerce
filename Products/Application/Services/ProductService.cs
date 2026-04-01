@@ -30,6 +30,19 @@ namespace Products.Application.Services
 			Product? product = new Product (0, productDto.Name, productDto.Price, productDto.Description);
 			await _productRepository.AddAsync(product);
 		}
+		public async Task UpdateProductAsync(ProductDto productDto)
+		{
+			var product = await _productRepository.GetByIdAsync(productDto.Id);
+
+			if (product == null)
+				throw new Exception("Produto não encontrado.");
+
+			product.Name = productDto.Name;
+			product.Price = productDto.Price;
+			product.Description = productDto.Description;
+
+			await _productRepository.UpdateAsync(product);
+		}
 
 		public async Task DeleteProductAsync(int id)
 		{

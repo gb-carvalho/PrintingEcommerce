@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Products.Domain.Entities;
 using Products.Domain.Interfaces;
 using Products.Infrastructure.Data;
@@ -26,6 +27,12 @@ namespace Products.Infrastructure.Repositories
 		public async Task AddAsync(Product product)
 		{
 			_context.Products.Add(product);
+			await _context.SaveChangesAsync();
+		}
+
+		public async Task UpdateAsync(Product product)
+		{
+			_context.Products.Update(product);
 			await _context.SaveChangesAsync();
 		}
 		public async Task DeleteAsync(int id)

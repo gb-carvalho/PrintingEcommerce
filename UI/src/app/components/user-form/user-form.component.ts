@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { AuthService, User } from '../../services/auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-user-form',
@@ -13,22 +14,24 @@ export class UserFormComponent {
 
   constructor(
     private route: ActivatedRoute,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) { }
 
   user: User = {
     id: '',
     name: '',
     email: '',
-    role: '',
+    role: '',   
     password: ''
   };
 
   error: string = "";
-  isEdit: boolean = this.user.id ? true : false;
+  isEdit: boolean = false;
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
+    this.isEdit = id ? true : false;
 
     if (id) {
       this.authService.getUser(id).subscribe({
@@ -47,6 +50,7 @@ export class UserFormComponent {
   }
 
   persistUser(): void {
+    console.log(this.isEdit);
     if (this.isEdit) {
       this.authService.updateUser(this.user).subscribe(response => {
         alert('Produto editado com sucesso!');
@@ -54,6 +58,7 @@ export class UserFormComponent {
     } else {
       this.authService.createUser(this.user).subscribe({
         next: (response) => {
+          this.router.navigate(['users/list/']);
           alert('Produto criado com sucesso!');
         },
         error: (err) => {

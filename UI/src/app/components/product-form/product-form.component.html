@@ -16,5 +16,5 @@
     <textarea id="description" [(ngModel)]="product.description" name="description" class="form-control"></textarea>
   </div>
 
-  <button type="submit" class="btn btn-primary">Cadastrar</button>
+  <button type="submit" class="btn btn-primary">{{ isEdit ? "Editar" : "Cadastrar" }}</button>
 </form>

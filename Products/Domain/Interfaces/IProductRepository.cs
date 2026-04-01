@@ -1,4 +1,5 @@
-﻿using Products.Domain.Entities;
+﻿using Microsoft.AspNetCore.Identity;
+using Products.Domain.Entities;
 
 namespace Products.Domain.Interfaces
 {
@@ -8,6 +9,7 @@ namespace Products.Domain.Interfaces
 		Task AddAsync(Product product);
 		Task DeleteAsync(int id);
 		Task<Product?> GetByIdAsync(int id);
+		Task UpdateAsync(Product product);
 
 	}
 }

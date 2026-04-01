@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductService } from '../../services/product/product.service';
-import { AuthService } from '../../services/auth/auth.service'
+import { AuthService } from '../../services/auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-product-list',
@@ -12,13 +13,17 @@ export class ProductListComponent implements OnInit {
 
   products: any[] = [];
 
-  constructor(private productService: ProductService, public authService: AuthService) { }
+  constructor(private productService: ProductService, public authService: AuthService, private router: Router) { }
 
   ngOnInit(): void {
     this.productService.getProducts().subscribe({
       next: (data) => this.products = data,
       error: (err) => console.error('Erro ao carregar produtos', err)
     });
+  }
+
+  editProduct(id: number) {
+    this.router.navigate(['product-form/', id]);   
   }
 
   removeProduct(id: number) {

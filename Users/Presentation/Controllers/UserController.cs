@@ -101,7 +101,7 @@ namespace Users.Presentation.Controllers
 			if (!result.Succeeded)
 				return BadRequest(new
 				{
-					message = "Erro ao registrar usuário",
+					message = "Erro ao editar usuário",
 					errors = result.Errors
 				});
 

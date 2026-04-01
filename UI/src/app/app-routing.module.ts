@@ -22,6 +22,7 @@ const routes: Routes = [
   { path: 'users/list', component: UsersListComponent, canActivate: [adminGuard] },
   { path: 'users/edit/:id', component: UserFormComponent, canActivate: [adminGuard] },
   { path: 'users/create', component: UserFormComponent, canActivate: [adminGuard] },
+  { path: 'product-form/:id', component: ProductFormComponent, canActivate: [adminGuard] },
 ];
 
 @NgModule({
